@@ -1,0 +1,93 @@
+:root {
+  --orange: #b8661e;
+  --green: #3d673d;
+  --brown: #161308;
+  --pink: #cc7e7e;
+  --cream: #fff6da;
+  --gray: #37382e;
+  font-family: "Source Code Pro", monospace;
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background-color: var(--cream);
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  padding-top: 0px;
+  color: var(--orange);
+}
+
+.card {
+  background-color: var(--green);
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px 400px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-header h2,
+.btn {
+  border: none;
+  background-color: var(--orange);
+  border-radius: 25px;
+  color: var(--cream);
+  font-size: 25px;
+  line-height: 22px;
+  margin: 20px;
+  padding: 14px 34px;
+  text-align: center;
+}
+
+.card-footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+}
+
+.btn {
+  flex: 0 0 50%;
+  font-size: 22px;
+  margin: 16px;
+  text-align: center;
+  cursor: crosshair;
+}
+
+@media (max-width: 690px) {
+  .card-header h2 {
+    font-size: 1.2rem;
+  }
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 500px) {
+  .card-header h2 {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
+}
