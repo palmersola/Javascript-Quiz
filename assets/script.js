@@ -112,6 +112,9 @@ function quizTimer() {
       timer.innerText = score + "/5 correct in " + count + " seconds";
       console.log("done");
       questionEl.innerText = points;
+      userName = prompt("Enter your name");
+      localStorage.setItem("points", points);
+      localStorage.setItem("name", userName);
     }
   }, 1000);
 }
